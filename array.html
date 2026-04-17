@@ -7,14 +7,25 @@
 </head>
 <body>
     <script >
-        // declaração do carro
+        // declaração do Array carros
         const carros = ["Jetta", "Civic", "Byd"];
 
-        // loop carros
-        for(let car in carros) {
-            // mostra no documento
-            document.write("<br>Carro: " + car);
+        document.write("<br>")
+
+        // for na estrutura basica
+        for (let i=0; i < carros.length; i++) {
+            document.write (carros[i] + ", ")
         }
+        document.write("<br>")
+
+        let car;
+        // loop carros simplificado
+        carros.forEach((item, index) => {
+            // mostra no documento
+            document.write("<br>Carro: " + item + index);
+        });
+        document.write("<br>")
+
     </script>
 </body>
 </html>
